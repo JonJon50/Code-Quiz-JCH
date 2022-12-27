@@ -1,12 +1,12 @@
 var questions = [
     {
-        question: "question1",
-        choices: ["choice1", "choice2", "choice3", "choice4"],
+        question: "What is NaN property in JavaScript?",
+        choices: ["New an Name", "Norm and Nook", "Not a Number"],
         correctAnswer: "choice2", 
     },
     {
-        question: "question2",
-        choices: ["choice1", "choice2", "choice3", "choice4"],
+        question: "CSS was created to?",
+        choices: ["Give website function", "Style website", "Write text"],
         correctAnswer: "choice3", 
     },
     {
@@ -31,7 +31,7 @@ var timerId;
 var questionDivEl = document.getElementById("question-div");
 document.getElementById("start-button").addEventListener("click", startQuiz);
 function startQuiz(){
-    var startDivEl=document.getElementById("start-div");
+    var startDivEl = document.getElementById("start-div");
     startDivEl.setAttribute("class", "hide");
     questionDivEl.removeAttribute("class");
     timerId = setInterval(timerFunc, 1000);
@@ -39,10 +39,9 @@ function startQuiz(){
     getQuestion();
 }
 function timerFunc(){
-    timeLeft--;
+    timeLeft --;
     timerEl.textContent = timeLeft;
     // reminder to be completed
-
 }
 function getQuestion(){
     // tbd
