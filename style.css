@@ -1,0 +1,28 @@
+.high-scores {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.timer {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.wrapper-div {
+    margin: 90px auto 0 auto;
+    max-width: 600px;
+}
+
+.start-div {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.choices-div button {
+    display: block;
+}
