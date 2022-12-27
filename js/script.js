@@ -2,27 +2,27 @@ var questions = [
     {
         question: "What is NaN property in JavaScript?",
         choices: ["New an Name", "Norm and Nook", "Not a Number"],
-        correctAnswer: "choice2", 
+        correctAnswer: "Not a Number", 
     },
     {
         question: "CSS was created to?",
-        choices: ["Give website function", "Style website", "Write text"],
-        correctAnswer: "choice3", 
+        choices: ["Give website function", "Style Website", "Write text"],
+        correctAnswer: "Style Website", 
     },
     {
-        question: "question3",
-        choices: ["choice1", "choice2", "choice3", "choice4"],
-        correctAnswer: "choice2", 
+        question: "What is HTML?",
+        choices: ["Hypertext Markup Language", "High Made Learn", "Historic act Leaderboard"],
+        correctAnswer: "Hypertext Markup Language", 
     },
     {
-        question: "question4",
-        choices: ["choice1", "choice2", "choice3", "choice4"],
-        correctAnswer: "choice2", 
+        question: "Which answer is a Pseudo-classes selector?",
+        choices: [".div", "#class", ":visited",],
+        correctAnswer: "visited", 
     },
     {
-        question: "question5",
-        choices: ["choice1", "choice2", "choice3", "choice4"],
-        correctAnswer: "choice2", 
+        question: "What does DOM mean in Javascript?",
+        choices: ["Directly oi Movement", "Document Object Model", "Discovery Overlook Material", "choice4"],
+        correctAnswer: "Document Object Model", 
     },
 ];
 var timeLeft = 120;
