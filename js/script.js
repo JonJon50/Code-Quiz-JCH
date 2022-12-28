@@ -47,7 +47,12 @@ function timerFunc(){
     timeLeft --;
     timerEl.textContent = timeLeft;
     // reminder to be completed
+    // check if user ran out of time
+  if (timeLeft  <= 0) {
+    endQuiz();
+  }
 }
+
 function getQuestion(){
  
     // tbd
