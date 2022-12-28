@@ -31,6 +31,9 @@ var timeLeft = 120;
 var timerEl= document.getElementById("timer");
 var timerId;
 var questionDivEl = document.getElementById("question-div");
+var currentQuestionIndex = 0;
+var currentQuestion;
+
 document.getElementById("start-button").addEventListener("click", startQuiz);
 function startQuiz(){
     var startDivEl = document.getElementById("start-div");
@@ -46,5 +49,25 @@ function timerFunc(){
     // reminder to be completed
 }
 function getQuestion(){
+ 
     // tbd
+var questionEl = document.getElementById("question");
+currentQuestion = questions[currentQuestionIndex];
+questionEl.innerText = currentQuestion.question;
+
+var choicesEl = document.getElementById("choices-div");
+choicesEl.innerHTML = "";
+
+for(var i = 0; i < currentQuestion.choices.length; i++){
+    var answerChoice = currentQuestion.choices[i];
+    var choiceButton = document.createElement("button");
+    choiceButton.setAttribute("class", "choice");
+    choiceButton.setAttribute("value", "answerChoice");
+
+    choiceButton.textContent = i + 1 + ". " + answerChoice;
+
+    choicesEl.appendChild(choiceButton);
+    
+}
+
 }
