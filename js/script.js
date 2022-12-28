@@ -55,19 +55,49 @@ var questionEl = document.getElementById("question");
 currentQuestion = questions[currentQuestionIndex];
 questionEl.innerText = currentQuestion.question;
 
-var choicesEl = document.getElementById("choices-div");
 choicesEl.innerHTML = "";
 
 for(var i = 0; i < currentQuestion.choices.length; i++){
     var answerChoice = currentQuestion.choices[i];
     var choiceButton = document.createElement("button");
     choiceButton.setAttribute("class", "choice");
-    choiceButton.setAttribute("value", "answerChoice");
+    choiceButton.setAttribute("value", answerChoice);
 
     choiceButton.textContent = i + 1 + ". " + answerChoice;
 
     choicesEl.appendChild(choiceButton);
-    
+
 }
 
+}
+ var choicesEl = document.getElementById("choices-div");
+choicesEl.onclick = choicesClick;
+
+function choicesClick(event){
+    var button = event.target;
+    if(!button.matches(".choice")){
+        return;
+    }
+    console.log("user choice = ", button.value);
+    if(button.value !== questions[currentQuestionIndex].correctAnswer){
+        timeLeft -= 25;
+        if(timeLeft < 0){
+            timeLeft = 0;
+        }
+        timerEl.textContent = timeLeft;
+        alert("Wrong Answer! Press OK to contouie"); 
+    }
+    else{
+        alert("Right Answer! Press OK to contouie");
+    }
+    currentQuestionIndex ++;
+
+    if(timeLeft <= 0 || currentQuestionIndex === questions.length){
+        endQuiz()
+    } else {
+        getQuestion();
+    }
+}
+function endQuiz(){
+    // tbd
 }
