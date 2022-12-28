@@ -1,4 +1,4 @@
-/* Variable set question and answers */
+/* Variable set questions and answers */
 var questions = [
     {
         question: "What is NaN property in JavaScript?",
