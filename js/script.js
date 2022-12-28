@@ -100,9 +100,15 @@ function choicesClick(event){
     if(timeLeft <= 0 || currentQuestionIndex === questions.length){
         endQuiz()
     } else {
-        getQuestion();
+        getQuestion(); 
     }
 }
 function endQuiz(){
     // tbd
+    // stop timer
+    clearInterval(timerId);
+ 
+    // show end screen
+    var endDivEl = document.getElementById('end-div');
+    endDivEl.removeAttribute('class'); 
 }
