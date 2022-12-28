@@ -1,3 +1,4 @@
+/* Variable set question and answers */
 var questions = [
     {
         question: "What is NaN property in JavaScript?",
@@ -25,6 +26,7 @@ var questions = [
         correctAnswer: "Document Object Model", 
     },
 ];
+/* Timer settings */
 var timeLeft = 120;
 var timerEl= document.getElementById("timer");
 var timerId;
