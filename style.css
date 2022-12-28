@@ -26,3 +26,7 @@
 .choices-div button {
     display: block;
 }
+footer {
+    text-align: center;
+    padding-top: 575px;
+}
