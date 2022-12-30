@@ -116,3 +116,33 @@ function endQuiz(){
   var finalScoreEl = document.getElementById('final-score');
   finalScoreEl.textContent = timeLeft;
 }
+var initialsEl = document.getElementById('initials');
+initialsEl.onkeyup = checkForEnter;
+function checkForEnter(event) {
+    if (event.key === 'Enter') {
+      saveScore();
+    }
+  }
+  function saveScore() {
+    // get value of input box
+    var initials = initialsEl.value.trim();
+  
+    if (initials !== '') {
+      // get saved scores from localstorage, or if not any, set to empty array
+      var scores =
+        JSON.parse(window.localStorage.getItem('highscores')) || [];
+  
+      // format new score object for current user
+      var newScore = {
+        score: timeLeft,
+        initials: initials,
+      };
+  
+      // save to localstorage
+      scores.push(newScore);
+      window.localStorage.setItem('scores', JSON.stringify(scores));
+  
+      // redirect to next page
+      window.location.href = 'hs.html';
+    }
+  }
