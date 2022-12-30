@@ -110,5 +110,9 @@ function endQuiz(){
  
     // show end screen
     var endDivEl = document.getElementById('end-div');
-    endDivEl.removeAttribute('class'); 
+    endDivEl.removeAttribute('class');
+    questionDivEl.setAttribute("class", "hide");
+   // show final score now
+  var finalScoreEl = document.getElementById('final-score');
+  finalScoreEl.textContent = timeLeft;
 }
