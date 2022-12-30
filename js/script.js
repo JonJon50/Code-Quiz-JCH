@@ -130,7 +130,7 @@ function checkForEnter(event) {
     if (initials !== '') {
       // get saved scores from localstorage, or if not any, set to empty array
       var scores =
-        JSON.parse(window.localStorage.getItem('highscores')) || [];
+        JSON.parse(window.localStorage.getItem('scores')) || [];
   
       // format new score object for current user
       var newScore = {
@@ -146,3 +146,6 @@ function checkForEnter(event) {
       window.location.href = 'hs.html';
     }
   }
+  // add event handler when user clicks button to submit initials
+  var submitBtn = document.getElementById('submit');
+submitBtn.onclick = saveScore;

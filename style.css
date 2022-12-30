@@ -3,14 +3,24 @@
     position: absolute;
     top: 12px;
     left: 12px;
+    font-size: larger;
 }
 
 .timer {
     position: absolute;
     top: 12px;
     right: 12px;
+    font-size: larger;
 }
 /* ---------------- */
+.choice {
+background-color: purple;
+color: white;
+padding: 10px;
+margin: 10px;
+font-size: medium;
+border-radius: 10px;
+}
 .wrapper-div {
     margin: 90px auto 0 auto;
     max-width: 600px;
@@ -18,6 +28,7 @@
 
 .start-div {
     text-align: center;
+    font-size: x-large;
 }
 
 .hide {
@@ -26,10 +37,11 @@
 
 .choices-div button {
     display: block;
+
 }
 /* footer */
 footer {
     text-align: center;
     padding-top: 485px;
-    
+
 }
