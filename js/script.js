@@ -22,7 +22,7 @@ var questions = [
     },
     {
         question: "What does DOM mean in Javascript?",
-        choices: ["Directly oi Movement", "Document Object Model", "Discovery Overlook Material", "choice4"],
+        choices: ["Directly oi Movement", "Document Object Model", "Discovery Overlook Material"],
         correctAnswer: "Document Object Model", 
     },
 ];
@@ -90,10 +90,10 @@ function choicesClick(event){
             timeLeft = 0;
         }
         timerEl.textContent = timeLeft;
-        alert("Wrong Answer! Press OK to contouie"); 
+        alert("Wrong Answer! Press OK to continue"); 
     }
     else{
-        alert("Right Answer! Press OK to contouie");
+        alert("Right Answer! Press OK to continue");
     }
     currentQuestionIndex ++;
 
