@@ -16,10 +16,12 @@
 - 📫 How to reach me **ginuwine104@gmail.com**
 
 ## Description
+
 🏆
-- Motivational skills refer to the actions I take to elicit a desired outcome, response or behavior. These skills encourage me or others to achieve our workplace goals. 
+
+- Motivational skills refer to the actions I take to elicit a desired outcome, response or behavior. These skills encourage me or others to achieve our workplace goals.
 - Creating is about getting around the obstacles that are presented to me.
-“You can dream, create, design, and build the most wonderful place in the World Wide Web . But it requires people to make the dream a reality.”
+  “You can dream, create, design, and build the most wonderful place in the World Wide Web . But it requires people to make the dream a reality.”
 - In general, the Code Quiz's job is to convert problem solutions into instructions for you to answer and learn.🏆
 
 - [Credits](# UCF, John Hagens)
@@ -30,6 +32,3 @@ ScreenShots of Code-Quiz 🏆
 ![alt text](/images/code-quiz1.png)
 ![alt text](/images/code-quiz2.png)
 ![alt text](/images/code-quiz3.png)
-
-
-
