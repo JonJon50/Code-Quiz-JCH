@@ -16,50 +16,20 @@
 - 📫 How to reach me **ginuwine104@gmail.com**
 
 ## Description
+🏆
+- Motivational skills refer to the actions I take to elicit a desired outcome, response or behavior. These skills encourage me or others to achieve our workplace goals. 
+- Creating is about getting around the obstacles that are presented to me.
+“You can dream, create, design, and build the most wonderful place in the World Wide Web . But it requires people to make the dream a reality.”
+- In general, the Code Quiz's job is to convert problem solutions into instructions for you to answer and learn.🏆
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-
-
-
-
-
-
-
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
 - [Credits](# UCF, John Hagens)
 - [License](#license)
 
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+ScreenShots of Code-Quiz 🏆
 
 ![alt text](/images/code-quiz1.png)
 ![alt text](/images/code-quiz2.png)
 ![alt text](/images/code-quiz3.png)
 
-🏆
 
-## How to Contribute
-
-
-
-## Tests
 
