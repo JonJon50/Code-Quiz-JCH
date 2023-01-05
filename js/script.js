@@ -31,6 +31,7 @@ var timeLeft = 120;
 var timerEl= document.getElementById("timer");
 var timerId;
 var questionDivEl = document.getElementById("question-div");
+var feedback = document.getElementById("feedback")
 var currentQuestionIndex = 0;
 var currentQuestion;
 
@@ -91,9 +92,19 @@ function choicesClick(event){
         }
         timerEl.textContent = timeLeft;
         // alert("Wrong Answer! Press OK to continue"); 
+        feedback.textContent = "Wrong"
+        setTimeout(function () {
+            /// empty the div
+            feedback.textContent = ""
+          }, 1000); 
     }
     else{
         // alert("Right Answer! Press OK to continue");
+        feedback.textContent = "Right"
+        setTimeout(function () {
+            /// empty the div
+            feedback.textContent = ""
+          }, 1000);  
     }
     currentQuestionIndex ++;
 
