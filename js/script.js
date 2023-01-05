@@ -85,15 +85,15 @@ function choicesClick(event){
     }
     console.log("user choice = ", button.value);
     if(button.value !== questions[currentQuestionIndex].correctAnswer){
-        timeLeft -= 25;
+        timeLeft -= 10;
         if(timeLeft < 0){
             timeLeft = 0;
         }
         timerEl.textContent = timeLeft;
-        alert("Wrong Answer! Press OK to continue"); 
+        // alert("Wrong Answer! Press OK to continue"); 
     }
     else{
-        alert("Right Answer! Press OK to continue");
+        // alert("Right Answer! Press OK to continue");
     }
     currentQuestionIndex ++;
 
@@ -104,7 +104,7 @@ function choicesClick(event){
     }
 }
 function endQuiz(){
-    // tbd
+    
     // stop timer
     clearInterval(timerId);
  
